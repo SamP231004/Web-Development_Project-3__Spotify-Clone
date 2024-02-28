@@ -1,7 +1,7 @@
 /* ************************************************************************************* */
 
 async function get_songs() {
-    let a = await fetch("http://127.0.0.1:5500/songs_used/")
+    let a = await fetch("/Songs_Used/")
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
